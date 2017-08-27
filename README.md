@@ -1,6 +1,6 @@
 # Htmlable
 
-Simple library for abstraction and rendering of html elements.
+Simple PHP library for abstraction and rendering of html elements.
 
 ## Install
 

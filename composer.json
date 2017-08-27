@@ -1,7 +1,7 @@
 {
     "name": "joaorobertopb/htmlable",
     "type": "library",
-    "description": "Easy dynamic HTML rendering in PHP files",
+    "description": "Simple PHP library for abstraction and rendering of html elements.",
     "keywords": [
         "joaorobertopb",
         "htmlable",
