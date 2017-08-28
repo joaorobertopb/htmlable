@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [Unreleased]
 
-## 1.0.0 - 2017-08-27
+## 1.0.0 - 2017-08-28
 ### Added
 - First Release
 
