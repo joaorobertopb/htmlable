@@ -34,7 +34,7 @@ trait HasAttributes
     *
     * @return $this
     */
-    public function setAttribute(string $attribute, string $value = '')
+    public function setAttribute(string $attribute, string $value)
     {
         $this->attributes[$attribute] = $value;
 
