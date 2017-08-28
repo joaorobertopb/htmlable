@@ -1,5 +1,7 @@
 # Htmlable
 
+[![Build Status][ico-build]][link-build] [![Latest Stable Version][ico-version]][link-packagist] [![Total Downloads][ico-downloads]][link-downloads] [![Latest Unstable Version][ico-unstable]][link-unstable] [![Code Coverage][ico-scrutinizer]][link-scrutinizer] [![Quality Score][ico-code-quality]][link-code-quality] [![Software License][ico-license]](LICENSE.md) 
+
 Simple PHP library for abstraction and rendering of html elements.
 
 ## Install
@@ -13,9 +15,9 @@ $ composer require joaorobertopb/htmlable
 ## Usage
 
 ``` php
-    $div = new JoaoRobertoPB\Htmlable\Tag('div');
-    $div->add('Hello, Htmlable!');
-    $div->render();
+$div = new JoaoRobertoPB\Htmlable\Tag('div');
+$div->add('Hello, Htmlable!');
+$div->render();
 ```
 
 * The html code will be printed by the method`render()`. 
@@ -85,7 +87,7 @@ $div->render();
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-      Hello world!
+      Hello!
     </div>
   </div>
 </div>
@@ -110,14 +112,28 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 - [João Roberto][link-author]
 - [All Contributors][link-contributors]
 
-This package is inspired by [this][book] great book by [@pablodalloglio][inspire-1]. Here is a [package][inspire-2] I used as reference.
+This package is inspired by [this][link-book] great book by [@pablodalloglio][link-inspire-1]. Here is a [package][link-inspire-2] I used as reference.
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
+[ico-version]: https://poser.pugx.org/joaorobertopb/htmlable/v/stable
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg
+[ico-build]: https://travis-ci.org/joaorobertopb/htmlable.svg?branch=master
+[ico-scrutinizer]: https://scrutinizer-ci.com/g/joaorobertopb/htmlable/badges/coverage.png?b=master
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/joaorobertopb/htmlable.svg
+[ico-downloads]: https://poser.pugx.org/joaorobertopb/htmlable/downloads
+[ico-unstable]: https://poser.pugx.org/joaorobertopb/htmlable/v/unstable
+
+[link-packagist]: https://packagist.org/packages/joaorobertopb/htmlable
+[link-build]: https://travis-ci.org/joaorobertopb/htmlable
+[link-scrutinizer]: https://scrutinizer-ci.com/g/joaorobertopb/htmlable/?branch=master
+[link-code-quality]: https://scrutinizer-ci.com/g/joaorobertopb/htmlable
+[link-downloads]: https://packagist.org/packages/joaorobertopb/htmlable
 [link-author]: https://github.com/joaorobertopb
 [link-contributors]: ../../contributors
-[book]: http://www.adianti.com.br/phpoo
-[inspire-1]: https://github.com/pablodalloglio
-[inspire-2]: https://github.com/spatie/html-element
+[link-unstable]: https://packagist.org/packages/joaorobertopb/htmlable
+[link-book]: http://www.adianti.com.br/phpoo
+[link-inspire-1]: https://github.com/pablodalloglio
+[link-inspire-2]: https://github.com/spatie/html-element
