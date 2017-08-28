@@ -15,17 +15,18 @@ class Tag implements Htmlable, HtmlAttributes
     use HasAttributes;
 
     /**
-    * @var String
+    * @var string
     */
     private $tag;
 
     /**
-    * @var JoaoRobertoPB\Htmlable\Tag | String
+    * @var array
     */
     protected $contents;
 
     /**
-    * @param string $name
+    * @param string $tagName
+    * @param array $attributes
     */
     public function __construct($tagName, $attributes = [])
     {
@@ -34,6 +35,10 @@ class Tag implements Htmlable, HtmlAttributes
         $this->contents = [];
     }
 
+    /**
+    * @param string $tagName
+    * @param array $attributes
+    */
     public static function make($tagName, $attributes = [])
     {
         return new self($tagName, $attributes);
