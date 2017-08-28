@@ -27,14 +27,14 @@ class Tag implements Htmlable, HtmlAttributes
     /**
     * @param string $name
     */
-    public function __construct(string $tagName, array $attributes = [])
+    public function __construct($tagName, $attributes = [])
     {
         $this->tag = trim($tagName);
         $this->setAttributes($attributes);
         $this->contents = [];
     }
 
-    public static function make(string $tagName, array $attributes = [])
+    public static function make($tagName, $attributes = [])
     {
         return new self($tagName, $attributes);
     }

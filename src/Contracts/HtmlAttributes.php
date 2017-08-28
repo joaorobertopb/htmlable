@@ -10,14 +10,16 @@ interface HtmlAttributes
     *
     * @return $this
     */
-    public function setAttribute(string $attribute, string $value);
+    public function setAttribute($attribute, $value);
 
     /**
     * @param array $attributes
     *
     * @return $this
     */
-    public function setAttributes(array $attributes);
+    public function setAttributes($attributes);
+
+
 
     /**
     * @return array

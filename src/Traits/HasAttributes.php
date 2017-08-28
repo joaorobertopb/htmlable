@@ -14,7 +14,7 @@ trait HasAttributes
     *
     * @return $this
     */
-    public function setAttributes(array $attributes)
+    public function setAttributes($attributes)
     {
         foreach ($attributes as $attribute => $value) {
             if (is_int($attribute)) {
@@ -34,7 +34,7 @@ trait HasAttributes
     *
     * @return $this
     */
-    public function setAttribute(string $attribute, string $value)
+    public function setAttribute($attribute, $value)
     {
         $this->attributes[$attribute] = $value;
 
