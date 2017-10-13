@@ -11,7 +11,6 @@ use JoaoRobertoPB\Htmlable\Contracts\HtmlAttributes;
 */
 class Tag implements Htmlable, HtmlAttributes
 {
-
     use HasAttributes;
 
     /**
@@ -49,7 +48,7 @@ class Tag implements Htmlable, HtmlAttributes
     */
     private function openTag()
     {
-        echo ( $this->attributesIsEmpty() ) ?
+        echo ($this->attributesIsEmpty()) ?
             "<{$this->tag}>" :
             "<{$this->tag} {$this->attributesToString()}>";
     }
