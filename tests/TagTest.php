@@ -29,7 +29,7 @@ class TagTest extends \PHPUnit\Framework\TestCase
         );
     }
 
-     /** @test */
+    /** @test */
     public function it_parses_self_closing_tag()
     {
         $br =  new Tag('br');
@@ -66,7 +66,7 @@ class TagTest extends \PHPUnit\Framework\TestCase
     }
 
     /** @test */
-    function it_parses_tag_with_an_argument_without_a_value()
+    public function it_parses_tag_with_an_argument_without_a_value()
     {
         $input = new Tag('input', ['readOnly']);
 
@@ -107,7 +107,7 @@ class TagTest extends \PHPUnit\Framework\TestCase
     public function it_parses_tag_with_multiple_arguments_by_static_method()
     {
         $div = Tag::make('div', ['class'=>"test", 'id'=>"test",'data-arg'=>"test"]);
-         $div->add('Hello world');
+        $div->add('Hello world');
 
         $this->assertEquals(
             '<div class="test" id="test" data-arg="test">Hello world</div>',
