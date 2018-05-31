@@ -3,8 +3,9 @@
 namespace JoaoRobertoPB\Htmlable;
 
 use JoaoRobertoPB\Htmlable\Tag;
+use PHPUnit\Framework\TestCase;
 
-class TagTest extends \PHPUnit\Framework\TestCase
+class TagTest extends TestCase
 {
 
     /** @test */
