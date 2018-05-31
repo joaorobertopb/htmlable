@@ -1,6 +1,6 @@
 # Htmlable
 
-[![Build Status][ico-build]][link-build] [![Latest Stable Version][ico-version]][link-packagist] [![Total Downloads][ico-downloads]][link-downloads] [![Latest Unstable Version][ico-unstable]][link-unstable] [![Code Coverage][ico-scrutinizer]][link-scrutinizer] [![Quality Score][ico-code-quality]][link-code-quality] [![Software License][ico-license]](LICENSE.md) 
+[![Build Status][ico-build]][link-build] [![Latest Stable Version][ico-version]][link-packagist] [![Total Downloads][ico-downloads]][link-downloads] [![Latest Unstable Version][ico-unstable]][link-unstable] [![Code Coverage][ico-scrutinizer]][link-scrutinizer] [![Quality Score][ico-code-quality]][link-code-quality] [![Software License][ico-license]](LICENSE.md)
 
 Simple PHP library for abstraction and rendering of html elements.
 
@@ -20,7 +20,7 @@ $div->add('Hello, Htmlable!');
 $div->render();
 ```
 
-* The html code will be printed by the method`render()`. 
+* The html code will be printed by the method`render()`.
 * To return the html code use the `toHtml()` method.
 
 
