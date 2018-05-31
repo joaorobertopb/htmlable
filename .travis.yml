@@ -27,7 +27,7 @@ before_script:
 
 script:
   - composer validate --strict --no-check-lock
-  - vendor/bin/phpcs --standard=psr2 src/
+  - ./vendor/bin/php-cs-fixer fix . -v --dry-run --using-cache=no
   - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
